@@ -41,9 +41,11 @@
 ### 3) L3 Cache (Level 3)
 * 멀티코어 환경에서 여러 코어가 공용으로 사용하는 캐시.
 * L1, L2는 각 코어에 독립적으로 존재하지만, L3는 코어들이 공유함.
-![image.png](attachment:deb9e367-6ff8-4b18-bf2e-841d53fa45be:image.png)
+<img width="1400" height="374" alt="image" src="https://github.com/user-attachments/assets/ec6fa0b6-28b1-4e26-917e-240ee26f2836" />
+
 ---
 
 ## 4. 개인 기기 확인 (노트북 성능지표)
 * 내 노트북의 **L1, L2 메모리 사양**을 확인하여 현재 시스템의 성능 수준을 체크해 볼 수 있습니다.
-* ![image.png](attachment:c2964276-16d0-4e23-be66-1c068182bb58:image.png)
+<img width="974" height="150" alt="image" src="https://github.com/user-attachments/assets/ad0b29e1-c7a1-4ff7-8bac-825da41686bb" />
+
