@@ -33,25 +33,59 @@
 
 ### 개념 흐름
 
-```mermaid
-flowchart LR
-    A["🗂️ 프로그램\n(Program)"]
-    B["⚙️ 프로세스\n(Process)"]
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" width="760" height="280" font-family="'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif">
 
-    A -->|"실행(메모리에 올라감)"| B
+  <!-- 배경 -->
+  <rect width="760" height="280" fill="#f8f9fa" rx="12"/>
 
-    subgraph A_detail["정적인 상태"]
-        a1["파일로 저장된 코드 덩어리"]
-        a2["Windows: .exe\nMacOS: .dmg"]
-        a3["메모리에 올라가지 않은 상태"]
-    end
+  <!-- 제목 -->
+  <text x="380" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a2e">프로그램 → 프로세스 전환</text>
 
-    subgraph B_detail["동적인 상태"]
-        b1["OS로부터 독립된 메모리 공간 할당"]
-        b2["'작업'과 동일한 의미"]
-        b3["실행 중인 프로그램"]
-    end
-```
+  <!-- ===== 왼쪽: 프로그램 박스 ===== -->
+  <rect x="30" y="55" width="280" height="200" rx="12" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+  <rect x="30" y="55" width="280" height="36" rx="12" fill="#818CF8"/>
+  <rect x="30" y="79" width="280" height="12" fill="#818CF8"/>
+  <text x="170" y="79" text-anchor="middle" font-size="14" font-weight="bold" fill="white">프로그램 (Program)</text>
+  <text x="170" y="100" text-anchor="middle" font-size="12" fill="#6B7280">정적인 상태</text>
+
+  <rect x="55" y="114" width="230" height="36" rx="6" fill="white" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="170" y="137" text-anchor="middle" font-size="12" fill="#374151">파일로 저장된 코드 덩어리</text>
+
+  <rect x="55" y="158" width="230" height="36" rx="6" fill="white" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="170" y="178" text-anchor="middle" font-size="12" fill="#374151">Windows: .exe / macOS: .dmg</text>
+
+  <rect x="55" y="202" width="230" height="36" rx="6" fill="white" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="170" y="222" text-anchor="middle" font-size="12" fill="#374151">메모리에 올라가지 않은 상태</text>
+
+  <!-- ===== 화살표 ===== -->
+  <line x1="318" y1="155" x2="432" y2="155" stroke="#6B7280" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="314" y="138" width="122" height="34" rx="6" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="375" y="152" text-anchor="middle" font-size="11" fill="#6B7280">실행</text>
+  <text x="375" y="166" text-anchor="middle" font-size="11" fill="#6B7280">(메모리에 올라감)</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <!-- ===== 오른쪽: 프로세스 박스 ===== -->
+  <rect x="440" y="55" width="290" height="200" rx="12" fill="#F0FDF4" stroke="#34D399" stroke-width="1.5"/>
+  <rect x="440" y="55" width="290" height="36" rx="12" fill="#10B981"/>
+  <rect x="440" y="79" width="290" height="12" fill="#10B981"/>
+  <text x="585" y="79" text-anchor="middle" font-size="14" font-weight="bold" fill="white">프로세스 (Process)</text>
+  <text x="585" y="100" text-anchor="middle" font-size="12" fill="#6B7280">동적인 상태</text>
+
+  <rect x="462" y="114" width="246" height="36" rx="6" fill="white" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="585" y="137" text-anchor="middle" font-size="12" fill="#374151">OS로부터 독립된 메모리 공간 할당</text>
+
+  <rect x="462" y="158" width="246" height="36" rx="6" fill="white" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="585" y="178" text-anchor="middle" font-size="12" fill="#374151">'작업(Task)'과 동일한 의미</text>
+
+  <rect x="462" y="202" width="246" height="36" rx="6" fill="white" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="585" y="222" text-anchor="middle" font-size="12" fill="#374151">실행 중인 프로그램</text>
+
+</svg>
 
 ### 핵심 정리
 
