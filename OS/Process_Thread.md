@@ -96,7 +96,8 @@ flowchart TD
 
 OS는 프로세스마다 각각 독립된 메모리 영역을 `Code / Data / Stack / Heap` 형식으로 할당한다.
 
-![프로세스별 독립 메모리](images/02_process_memory.svg)
+<img width="900" height="380" alt="02_process_memory" src="https://github.com/user-attachments/assets/1ce48e82-2b2e-4ba4-b474-b7f5570b16a6" />
+
 
 ### 스레드 간 공유 구조 (★ 핵심)
 
@@ -104,7 +105,8 @@ OS는 프로세스마다 각각 독립된 메모리 영역을 `Code / Data / Sta
 - **Stack**: 스레드마다 **따로** 할당받음 (독립)
 - **Code / Data / Heap**: 같은 프로세스 내 스레드끼리 **공유**
 
-![스레드 메모리 공유 구조](images/03_thread_memory.svg)
+<img width="900" height="390" alt="03_thread_memory" src="https://github.com/user-attachments/assets/2e885d0a-075e-4848-ad49-ef824b22a56e" />
+
 
 | 메모리 영역 | 역할 | 스레드 간 |
 |------------|------|----------|
