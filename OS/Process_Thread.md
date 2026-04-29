@@ -33,7 +33,8 @@
 
 ### 개념 흐름
 
-![프로그램에서 프로세스로](images/01_program_to_process.svg)
+<img width="900" height="340" alt="01_program_to_process" src="https://github.com/user-attachments/assets/27408e47-72f8-4ea5-b3ff-3bb3b045b13c" />
+
 
 ### 핵심 정리
 
