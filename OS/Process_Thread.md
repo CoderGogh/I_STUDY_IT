@@ -108,6 +108,8 @@ OS는 프로세스마다 각각 독립된 메모리 영역을 `Code / Data / Sta
 <img width="900" height="390" alt="03_thread_memory" src="https://github.com/user-attachments/assets/2e885d0a-075e-4848-ad49-ef824b22a56e" />
 
 
+
+
 | 메모리 영역 | 역할 | 스레드 간 |
 |------------|------|----------|
 | **Code** | 실행할 코드 저장 | ✅ 공유 |
