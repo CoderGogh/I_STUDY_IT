@@ -89,6 +89,9 @@ OS가 강제로 CPU 회수                    프로세스 A가 직접 반납
 프로세스 B에게 CPU 할당
 ```
 
+<img width="1400" height="820" alt="img1_scheduling_timeline" src="https://github.com/user-attachments/assets/6522afa9-56c9-4ac4-a056-13bb8d9a7517" />
+
+
 ### 비교 테이블
 
 | 비교 항목 | 선점 스케줄링 (Preemptive) | 비선점 스케줄링 (Non-preemptive) |
@@ -143,6 +146,9 @@ OS가 강제로 CPU 회수                    프로세스 A가 직접 반납
                                 ↓
                     [ 멀티코어 CPU 병렬 실행 ]
 ```
+
+<img width="1400" height="960" alt="img2_backend_arch" src="https://github.com/user-attachments/assets/19fcc80a-f6c3-4e6d-b3dc-7c86f551d86b" />
+
 
 ---
 
@@ -207,6 +213,9 @@ CFS 핵심 원리:
 - vruntime이 가장 작은(= 가장 적게 실행된) 스레드를 우선 선택
 - 결과적으로 모든 스레드가 균등한 CPU 시간을 보장받음
 ```
+
+<img width="1400" height="900" alt="img3_cfs" src="https://github.com/user-attachments/assets/ef245fb7-13a5-4db7-b77d-331373f4d30a" />
+
 
 ---
 
