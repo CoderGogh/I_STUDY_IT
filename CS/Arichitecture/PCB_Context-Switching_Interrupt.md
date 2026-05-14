@@ -15,7 +15,7 @@
 
 <br>
 
-### 📋 PCB (Process Control Block) 구성 요소
+## 📋 PCB (Process Control Block) 구성 요소
 운영체제가 프로세스를 제어하기 위해 필요한 정보를 담는 자료구조
 
 *   **PID**: 프로세스 고유 식별 번호
@@ -46,7 +46,7 @@
 *   **Context**: CPU가 Task를 실행하기 위해 필요한 정보(Register, PC 등)를 의미하며 PCB에서 관리됨.
 
 
-### 🚨 발생 기준 (Trigger)
+## 🚨 발생 기준 (Trigger)
 1.  **Interrupt 발생**: 하드웨어 신호나 예외 상황 발생 시.
 2.  **시간 할당량(Time Quantum) 소진**: 프로세스의 선점 허용 기간 만료 시.
 3.  **I/O 대기**: 입출력 작업을 위해 프로세스가 대기(Blocked) 상태로 전환될 때.
@@ -94,7 +94,7 @@
 
 
 ---
-
+<br>
 
 ## 5. 프로세스 vs 스레드 문맥 교환
 
