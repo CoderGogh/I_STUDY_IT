@@ -29,7 +29,8 @@
 *   **Memory Limit**: 프로세스가 사용 가능한 메모리 경계값
 
 아래의 이미지는, 터미널에서 'PID' '상태(STAT)', '우선순위(PRI)', '명령어(COMM)'를 출력한 결과(PCB 메타데이터)
-<img width="520" height="61" alt="image" src="https://github.com/user-attachments/assets/bb4eb375-563c-4c04-8104-e8afc6e785fb" />
+<img width="293" height="70" alt="image" src="https://github.com/user-attachments/assets/5d8d0475-d077-4ae0-8786-e53b1fce3549" />
+
 
 <br>
 
