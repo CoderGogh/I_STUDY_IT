@@ -112,3 +112,9 @@
 3.  **캐시 유지**: 프로세스 교환과 달리 메모 주소 공간이 바뀌지 않으므로 **TLB 플러시나 캐시 무효화** 부담이 거의 없음.
 
 </details>
+
+---
+## 6. 전체 흐름도
+<img width="1920" height="819" alt="ChatGPT Image 2026년 5월 15일 오전 12_17_38" src="https://github.com/user-attachments/assets/fb2636b7-f033-42dd-9c6b-6607fb64bca6" />
+<img width="1408" height="768" alt="Gemini_Generated_Image_lt3wsrlt3wsrlt3w" src="https://github.com/user-attachments/assets/77c41187-90b2-41ac-98dd-87a8e20365a7" />
+
