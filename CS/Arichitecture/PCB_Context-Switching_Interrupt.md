@@ -173,8 +173,33 @@
 
 </details>
 
+
+<br>
+
 ---
-## 6. 전체 흐름도
+
+## 6. 프로세스 vs 스레드 문맥 교환
+
+
+
+<details>
+<summary><b>🧵 스레드 스위칭과 프로세스 스위칭의 차이점 (클릭하여 확인)</b></summary>
+
+### 💡 핵심 요약
+스레드 간의 문맥 교환은 프로세스 간 교환보다 비용이 훨씬 저렴합니다.
+
+### 차이가 발생하는 이유
+1.  **자원 공유**: 같은 프로세스 내의 스레드들은 `Code`, `Data`, `Heap` 영역을 공유합니다. 따라서 메모리 주소 공간을 통째로 바꿀 필요가 없습니다.
+2.  **교체 범위 최소화**: 스레드 스위칭은 TCB(Thread Control Block)에 담긴 **스택 포인터와 레지스터 값**만 갈아 끼우면 끝납니다.
+3.  **TLB 성능 유지 (결정적 차이)**: 
+    * **프로세스 스위칭**: 가상 메모리 주소 체계가 바뀌므로 주소 변환 정보를 담은 **TLB(Translation Lookaside Buffer) 캐시를 완전히 비워야(Flush)** 합니다.
+    * **스레드 스위칭**: 동일한 주소 공간을 사용하므로 **TLB를 비울 필요가 없어** 전환 후에도 메모리 접근 속도가 유지됩니다.
+
+</details>
+
+---
+
+## 7. 전체 흐름도
 <img width="1920" height="819" alt="ChatGPT Image 2026년 5월 15일 오전 12_17_38" src="https://github.com/user-attachments/assets/fb2636b7-f033-42dd-9c6b-6607fb64bca6" />
 <img width="1408" height="768" alt="Gemini_Generated_Image_lt3wsrlt3wsrlt3w" src="https://github.com/user-attachments/assets/77c41187-90b2-41ac-98dd-87a8e20365a7" />
 
