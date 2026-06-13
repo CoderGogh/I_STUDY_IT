@@ -8,4 +8,4 @@ https://wikidocs.net/78563 <br>
 ---
 
 ## 남은 진도
-https://wikidocs.net/7028
+[https://wikidocs.net/7028](https://wikidocs.net/78768)
